@@ -1,0 +1,131 @@
+profiles:
+  probe_deepseek_r1:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: deepseek-r1
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  probe_gemini_2_5_flash:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: gemini-2.5-flash
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  probe_grok_3_mini:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: grok-3-mini
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  probe_qwen3_235b:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: qwen3-235b
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_claude_4_sonnet:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: claude-4-sonnet
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_deepseek_v3:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: deepseek-v3
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_gemini_2_5_flash:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: gemini-2.5-flash
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_gpt_4o:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: gpt-4o
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_grok_3:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: grok-3
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_llama_3_1_70b:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: llama-3.1-70b
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_o4_mini:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: o4-mini
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_qwen3_30b:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: qwen3-30b
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_llama_4_maverik:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: llama-4-maverik
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  judge_gpt_4_1:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: gpt-4.1
+    timeout: 180
+    max_retries: 3
+    temperature: 0.0
+    response_format_json: true
+
+  judge_gemini_2_5_flash:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: gemini-2.5-flash
+    timeout: 180
+    max_retries: 3
+    temperature: 0.0
+    response_format_json: true
+
+  judge_grok_3:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: grok-3
+    timeout: 180
+    max_retries: 3
+    temperature: 0.0
+    response_format_json: true

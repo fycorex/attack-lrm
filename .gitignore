@@ -1,0 +1,15 @@
+.conda-env/
+.conda-pkgs/
+config/generated/*.yaml
+__pycache__/
+*.pyc
+outputs/latest
+outputs/*/
+!outputs/.gitkeep
+!outputs/example_turn_records.jsonl
+
+# Local AI/runtime artifacts; do not upload these.
+.codex
+.omx/
+.omc/
+CLAUDE.md

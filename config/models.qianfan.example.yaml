@@ -1,0 +1,100 @@
+profiles:
+  probe_glm_5:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: glm-5
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  probe_kimi_k2_5:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: kimi-k2.5
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  probe_deepseek_v3_2:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: deepseek-v3.2
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  probe_minimax_m2_5:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: minimax-m2.5
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_glm_5:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: glm-5
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_kimi_k2_5:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: kimi-k2.5
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_deepseek_v3_2:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: deepseek-v3.2
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  target_minimax_m2_5:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: minimax-m2.5
+    timeout: 120
+    max_retries: 3
+    temperature: 0.0
+
+  judge_glm_5:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: glm-5
+    timeout: 180
+    max_retries: 3
+    temperature: 0.0
+    response_format_json: true
+
+  judge_kimi_k2_5:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: kimi-k2.5
+    timeout: 180
+    max_retries: 3
+    temperature: 0.0
+    response_format_json: true
+
+  judge_deepseek_v3_2:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: deepseek-v3.2
+    timeout: 180
+    max_retries: 3
+    temperature: 0.0
+    response_format_json: true
+
+  judge_minimax_m2_5:
+    base_url_env: OPENAI_COMPAT_BASE_URL
+    api_key_env: OPENAI_COMPAT_API_KEY
+    model: minimax-m2.5
+    timeout: 180
+    max_retries: 3
+    temperature: 0.0
+    response_format_json: true
