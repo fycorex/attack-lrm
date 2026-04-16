@@ -113,8 +113,12 @@ class OpenAICompatibleAdapter:
         if extra_body:
             payload.update(extra_body)
 
+        # Handle both raw tokens and Bearer-prefixed tokens
+        api_key = self.settings.api_key
+        if not api_key.startswith("Bearer "):
+            api_key = f"Bearer {api_key}"
         headers = {
-            "Authorization": f"Bearer {self.settings.api_key}",
+            "Authorization": api_key,
             "Content-Type": "application/json",
         }
         headers.update(self.settings.headers)
@@ -151,7 +155,12 @@ class OpenAICompatibleAdapter:
                         raise RuntimeError(
                             f"{self.settings.label} request failed after {attempt + 1} attempts: {exc}"
                         ) from exc
-                    sleep_seconds = min(2**attempt, 8) + random.random() * 0.25
+                    # Check for Retry-After header on 429 errors
+                    sleep_seconds = min(2**attempt, 60) + random.random() * 0.5
+                    if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code == 429:
+                        retry_after = exc.response.headers.get("Retry-After")
+                        if retry_after and retry_after.isdigit():
+                            sleep_seconds = max(int(retry_after), 2)
                     time.sleep(sleep_seconds)
 
     @staticmethod
