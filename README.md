@@ -361,19 +361,6 @@ python scripts/summarize_results.py --input outputs/matrix_YYYYMMDDTHHMMSSZ_abcd
 
 The script prints the top-level metrics from `metrics_summary.json`.
 
-## Git Hygiene
-
-The repository is configured to keep generated and local runtime files out of commits:
-
-- conda environments and package caches
-- Python bytecode and `__pycache__`
-- generated configs under `config/generated/*.yaml`
-- real run outputs under `outputs/*/`
-- `outputs/latest/`
-- local AI/runtime artifacts such as `.omx/`, `.omc/`, `.codex`, and `CLAUDE.md`
-
-Only `outputs/.gitkeep` and `outputs/example_turn_records.jsonl` are intended to be tracked under `outputs/`.
-
 ## Reproducibility Notes
 
 Model providers may differ in API behavior, model aliases, safety filters, rate limits, and JSON response formatting. The example profile names are paper-shaped labels, not a guarantee that the referenced models are available from your endpoint.
